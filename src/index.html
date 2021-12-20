@@ -12,30 +12,35 @@
   </head>
 
   <body>
-    <form onsubmit="onSbumit()"
+    <form
+      onsubmit="onSbumit()"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
+      autocomplete="off"
     >
 
       <fieldset class="form-block">
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text"
-          name="surname"
+          <input
+            type="text"
+            name="surname"
           >
         </label>
 
         <label class="form-field">
           Name:
-          <input type="text"
+          <input
+            type="text"
             name="name"
           >
         </label>
 
         <label class="form-field">
           How old are you?
-          <input type="number"
+          <input
+            type="number"
             name="age"
             min="12"
             max="100"
@@ -45,14 +50,16 @@
 
         <label class="form-field">
           Full date of birth:
-          <input type="date"
+          <input
+            type="date"
             name="date"
           >
         </label>
 
         <label for="termsid" class="form-field">
           I accept the term of the agreement
-          <input class="terms"
+          <input
+            class="terms"
             type="checkbox"
             id="termsid"
             required
@@ -65,7 +72,8 @@
 
         <label class="form-field">
           E-mail:
-          <input type="email"
+          <input
+            type="email"
             name="email"
             placeholder="email@example.com"
             required
@@ -74,7 +82,8 @@
 
         <label class="form-field">
           Password:
-          <input type="password"
+          <input
+            type="password"
             name="password"
             minlength="5"
             maxlength="32"
@@ -99,15 +108,17 @@
         </div>
 
         <label class="form-field">
-          What is tour favorite color?
-          <input type="color"
+          What is your favorite color?
+          <input
+            type="color"
             name="color"
           >
         </label>
 
         <label class="form-field">
           What time do you go to bed?
-          <input type="time"
+          <input
+            type="time"
             name="time"
             required
           >
@@ -124,7 +135,8 @@
 
         <label class="form-field">
           How do you rate our work?
-          <input type="range"
+          <input
+            type="range"
             name="rate"
             required
           >
@@ -132,7 +144,7 @@
       </fieldset>
 
       <fieldset class="form-block">
-        <legend>Addition info:</legend>
+        <legend>Additional info:</legend>
 
         <label class="form-field">
           Comments:
